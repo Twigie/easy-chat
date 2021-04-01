@@ -2,9 +2,11 @@
 This is a vue component intended to act as a frontend chat layout.
 ## Current Props able to be passed
 ```javascript
+PROPS
 messages: Array,
 title: String,
 users: Array,
+thisUser: String
 
 Example messages Array: [{name: '', text: '', color: ''}]
 
