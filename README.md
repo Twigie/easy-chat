@@ -9,7 +9,7 @@ users: Array,
 Example messages Array: [{name: '', text: '', color: ''}]
 
 The event 'sendMessage' is triggered when the user enters a chat message
-this.$emit('sendMessage', this.temText)
+this.$emit('sendMessage', {message, user})
 ```
 
 ## Project setup

@@ -53,6 +53,7 @@ export default {
       default: 'Chat'
     },
     users: Array,
+    thisUser: String
   },
   components: {
     Picker
@@ -79,7 +80,7 @@ export default {
     },
     emitMessage (e) {
       if (e.keyCode === 13) {
-        this.$emit('sendMessage', this.itemText)
+        this.$emit('sendMessage', {message: this.message, user: this.thisUser})
       }
     }
   },
